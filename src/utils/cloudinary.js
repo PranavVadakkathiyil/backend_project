@@ -13,7 +13,6 @@ cloudinary.config({
     api_secret: 'ph8o3JKvsjbjJKNKEZl1ugnAKGs' // Click 'View API Keys' above to copy your API secret
 });
 
-console.log(process.env.CLOUDINARY_NAME,process.env.CLOUDINARY_API_KEY,process.env.CLOUDINARY_SECRET_KEY,"yhbhbhbj");
 
 
 const uploadToCloudinary = async (localFilePath) => {
@@ -33,14 +32,14 @@ const uploadToCloudinary = async (localFilePath) => {
         
     } catch (error) {
        console.log(error);
-       console.log('wedd');
+    //   console.log('wedd');
        
        
-        console.log( localFilePath,"dff");
+        //console.log( localFilePath,"dff");
 
         
         fs.unlinkSync(localFilePath)
-        console.log( localFilePath,"dff");
+        //console.log( localFilePath,"dff");
 
         //return null
     }
